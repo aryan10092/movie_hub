@@ -31,7 +31,7 @@ export default function SearchBar() {
           type="text"
           value={localQuery}
           onChange={handleInputChange}
-          placeholder="Search for movies or TV series..."
+          placeholder="Search for movies or TV series"
           className="w-full px-4 py-3 pl-12 pr-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
           disabled={state.loading}
         />
@@ -43,7 +43,7 @@ export default function SearchBar() {
           disabled={state.loading || !localQuery.trim()}
           className="absolute inset-y-0 right-0 flex items-center pr-3"
         >
-          <div className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200">
+          <div className="px-3 md:px-4 py-1.5 md:py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200">
             {state.loading ? 'Searching...' : 'Search'}
           </div>
         </button>
