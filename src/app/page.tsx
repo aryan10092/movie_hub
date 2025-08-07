@@ -47,7 +47,7 @@ export default function HomePage() {
                 </a>
               </p>
               <p className="mt-2 text-sm">
-                Built with Next.js, TypeScript, and Tailwind CSS
+                Built by Aryan Gupta
               </p>
             </div>
           </div>
